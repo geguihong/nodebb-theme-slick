@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-slick",
+	"id": "nodebb-theme-insta360-forum",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
