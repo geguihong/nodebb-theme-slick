@@ -7,21 +7,28 @@
 
 		<h4 class="hidden-xs">{name}</h4>
 
-		<div class="clearfix">
-			<!-- IF privileges.topics:create -->
-			<button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
-			<!-- ELSE -->
-				<!-- IF !loggedIn -->
-				<a component="category/post/guest" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
-				<!-- ENDIF !loggedIn -->
-			<!-- ENDIF privileges.topics:create -->
+		<div style="display: flex;">
+            <div style="flex: none;">
+                <!-- IF privileges.topics:create -->
+                <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+                <!-- ELSE -->
+                    <!-- IF !loggedIn -->
+                    <a component="category/post/guest" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
+                    <!-- ENDIF !loggedIn -->
+                <!-- ENDIF privileges.topics:create -->
+            </div>
 
-			<span class="pull-right" component="category/controls">
-				<!-- IMPORT partials/category/watch.tpl -->
-				<!-- IMPORT partials/category/sort.tpl -->
-				<!-- IMPORT partials/category/tools.tpl -->
-			</span>
-		</div>
+
+            <!-- IF loggedIn -->
+            <div class="clearfix" component="category/controls" style="flex:auto; background: #F7F7F7; border-radius: 4px; margin-left: 12px;">
+                <span class="pull-right">
+                    <!-- IMPORT partials/category/watch.tpl -->
+                    <!-- IMPORT partials/category/sort.tpl -->
+                    <!-- IMPORT partials/category/tools.tpl -->
+                </span>
+            </div>
+            <!-- ENDIF !loggedIn -->
+        </div>
 
 		<!-- IF !topics.length -->
 		<div class="alert alert-warning" id="category-no-topics">
