@@ -8,7 +8,7 @@
 		<h4 class="hidden-xs">{name}</h4>
 
 		<div style="display: flex;">
-            <div style="flex: none;">
+            <div style="flex: none; margin-right: 12px;">
                 <!-- IF privileges.topics:create -->
                 <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
                 <!-- ELSE -->
@@ -20,7 +20,7 @@
 
 
             <!-- IF loggedIn -->
-            <div class="clearfix" component="category/controls" style="flex:auto; background: #F7F7F7; border-radius: 4px; margin-left: 12px;">
+            <div class="clearfix" component="category/controls" style="flex:auto; background: #F7F7F7; border-radius: 4px;">
                 <span class="pull-right">
                     <!-- IMPORT partials/category/watch.tpl -->
                     <!-- IMPORT partials/category/sort.tpl -->
