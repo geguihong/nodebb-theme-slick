@@ -38,7 +38,7 @@
 			<!-- END posts -->
 		</div>
 
-		<!-- IMPORT partials/topic/quickreply.tpl -->
+		<div style="display:none;"><!-- IMPORT partials/topic/quickreply.tpl --></div>
 
 		<div class="post-bar">
 			<!-- IMPORT partials/post_bar.tpl -->

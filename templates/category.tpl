@@ -5,12 +5,14 @@
 
 		<!-- IF children.length --><hr class="hidden-xs"/><!-- ENDIF children.length -->
 
+		<h4 class="hidden-xs">{name}</h4>
+
 		<div class="clearfix">
 			<!-- IF privileges.topics:create -->
 			<button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
 			<!-- ELSE -->
 				<!-- IF !loggedIn -->
-				<a component="category/post/guest" href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
+				<a component="category/post/guest" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
 				<!-- ENDIF !loggedIn -->
 			<!-- ENDIF privileges.topics:create -->
 
@@ -20,10 +22,6 @@
 				<!-- IMPORT partials/category/tools.tpl -->
 			</span>
 		</div>
-
-		<hr class="hidden-xs" />
-
-		<h4 class="hidden-xs">{name}</h4>
 
 		<!-- IF !topics.length -->
 		<div class="alert alert-warning" id="category-no-topics">
