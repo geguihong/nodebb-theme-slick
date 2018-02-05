@@ -22,6 +22,6 @@
 <!-- ELSE -->
 
 <!-- IF !privileges.topics:reply -->
-<a component="topic/reply/guest" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[topic:guest-login-reply]]</a>
+<a component="topic/reply/guest" target="_top" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[topic:guest-login-reply]]</a>
 <!-- ENDIF !privileges.topics:reply -->
 <!-- ENDIF loggedIn -->

@@ -13,7 +13,7 @@
                 <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
                 <!-- ELSE -->
                     <!-- IF !loggedIn -->
-                    <a component="category/post/guest" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
+                    <a component="category/post/guest" target="_top" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
                     <!-- ENDIF !loggedIn -->
                 <!-- ENDIF privileges.topics:create -->
             </div>
