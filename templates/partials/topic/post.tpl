@@ -7,21 +7,6 @@
 			<i class="fa fa-pencil-square pointer edit-icon <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"></i>
 			<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.editedISO}"></span></small>
 		</div>
-		<!-- IF !reputation:disabled -->
-		<div class="votes pull-right">
-			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
-				<i class="fa fa-chevron-up"></i>
-			</a>
-
-			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
-
-			<!-- IF !downvote:disabled -->
-			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
-				<i class="fa fa-chevron-down"></i>
-			</a>
-			<!-- ENDIF !downvote:disabled -->
-		</div>
-		<!-- ENDIF !reputation:disabled -->
 	</div>
 </div>
 <div class="row post">
@@ -43,9 +28,19 @@
 			<!-- ENDIF posts.user.selectedGroup.slug -->
 		</div>
 	</div>
-	<div class="col-sm-10 col-md-10 col-lg-10 post-content" component="post/content">
-		{posts.content}
+	<div class="col-sm-10 col-md-10 col-lg-10">
+		<div class="post-content" component="post/content">
+			{posts.content}
+		</div>
+		<!-- IF !reputation:disabled -->
+		<div class="votes">
+			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
+				投票（<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>）
+			</a>
+		</div>
+		<!-- ENDIF !reputation:disabled -->
 	</div>
+
 	<!-- IF posts.user.signature -->
 	<div class="col-sm-10 col-md-10 col-lg-10">
 		<div class="post-signature" component="post/signature" data-uid="{posts.user.uid}">

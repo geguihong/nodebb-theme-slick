@@ -29,8 +29,14 @@
 
 					<meta itemprop="datePublished" content="{posts.timestampISO}">
 					<meta itemprop="dateModified" content="{posts.editedISO}">
-
-					<!-- IMPORT partials/topic/post.tpl -->
+					
+					<!-- IF posts.index -->
+						<!-- IMPORT partials/topic/post.tpl -->
+					<!-- ELSE -->
+						<div class="votes-show">
+							<!-- IMPORT partials/topic/post.tpl -->
+						</div>
+					<!-- ENDIF -->
 				</div>
 				<!-- IF !posts.index -->
 				<div class="post-bar-placeholder"></div>
