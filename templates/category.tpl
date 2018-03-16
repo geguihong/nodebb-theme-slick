@@ -1,11 +1,11 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="row">
 	<div class="category col-lg-12 col-sm-12">
-		<!-- IMPORT partials/category/subcategory.tpl -->
-
 		<!-- IF children.length --><hr class="hidden-xs"/><!-- ENDIF children.length -->
 
 		<h4 class="hidden-xs">{name}</h4>
+
+        <!-- IMPORT partials/category/subcategory.tpl -->
 
 		<div style="display: flex;">
             <div style="flex: none; margin-right: 12px;">
