@@ -1,0 +1,52 @@
+{
+    "feedback_title": "反馈 Bug",
+    "feedback_submit": "提交 Bug",
+
+    "select_placeholder": "请选择",
+
+    "title_label": "问题标题",
+    "title_placeholder": "请用一句话描述问题，例如：相机固件升级到新版 203 升级失败",
+
+    "product_label": "产品类别",
+    "product_placeholder": "请填写其他软件的名称与版本号",
+
+    "step_label": "复现步骤",
+    "step_placeholder": "请您详细描述您遇到的问题，并列出复现的步骤",
+
+    "frequency_label": "复现概率",
+
+    "can_resume_label": "可否恢复",
+    "can_resume_tip": "重启/重连相机、重新打开程序等操作可否恢复正常使用",
+    "yes": "是",
+    "no": "否",
+
+    "upload_max": "最大：",
+    "upload_type": "类型：",
+    "upload_file_link_href": "https://support.insta360.com",
+    "upload_file_link_text": "如何上传相机 LOG?",
+    "upload_file_tip": "如果你想发送视频等大文件给我们，请上传至第三方网盘，并将网盘地址填写在复现步骤的末尾。",
+    "delete": "删除",
+
+    "additional_label": "补充说明",
+    "additional_placeholder": "补充描述问题",
+
+    "upload_image_label": "上传图片",
+    "upload_file_label": "上传附件",
+    "view_image_label": "图片",
+    "view_file_label": "附件",
+
+    "contact_label": "联系方式",
+    "contact_placeholder": "手机号/邮箱",
+
+    "privacy": "上传的附件、联系方式仅对工作人员可见",
+
+
+    "suggestion_title": "反馈建议",
+    "suggestion_submit": "提交建议",
+
+    "suggestion_title_label": "建议标题",
+    "suggestion_title_placeholder": "请您理性、客观地简要描述您要反馈的建议",
+
+    "suggestion_desc_label": "详细描述",
+    "suggestion_desc_placeholder": "请您详细描述您的需求和建议"
+}

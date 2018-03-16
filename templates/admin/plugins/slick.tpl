@@ -16,6 +16,20 @@
 					<option value="dark">Dark</option>
 				</select>
 			</div>
+
+			<div class="form-group">
+				<label>category using editor1</label>
+				<input type="text" name="cid1" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label>category using editor2</label>
+				<input type="text" name="cid2" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label>product list</label>
+				<textarea class="form-control" name="productList"></textarea>
+			</div>
 		</form>
 	</div>
 </div>

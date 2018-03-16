@@ -25,16 +25,22 @@
 		},
 		{
 			"hook": "filter:meta.getLinkTags", "method": "getLinkTags"
+		},
+		{
+			"hook": "filter:category.build", "method": "categoryBuild"
 		}
 	],
 	"scripts": [
 		"lib/slick.js",
 		"lib/modules/slideout.min.js",
 		"lib/chats.js",
-		"lib/quickreply.js"
+		"lib/quickreply.js",
+		"lib/editor.js"
 	],
 	"acpScripts": [
 		"lib/admin.js"
 	],
-	"templates": "./templates"
+	"templates": "./templates",
+	"languages": "./languages",
+	"defaultLang": "en-GB"
 }
