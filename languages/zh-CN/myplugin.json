@@ -8,6 +8,7 @@
     "title_placeholder": "请用一句话描述问题，例如：相机固件升级到新版 203 升级失败",
 
     "product_label": "产品类别",
+    "version_placeholder": "请填写版本号",
     "product_placeholder": "请填写其他软件的名称与版本号",
 
     "step_label": "复现步骤",

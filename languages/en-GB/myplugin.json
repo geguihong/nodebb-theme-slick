@@ -5,6 +5,7 @@
     "title_label": "Title",
     "title_placeholder": "Please describe your problem in one sentence, for example: camera firmware failed to upgrade to V203",
     "product_label": "Product Category",
+    "version_placeholder": "Please fill in version",
     "product_placeholder": "Please fill in the name and version of other software",
     "step_label": "Recurrence steps",
     "step_placeholder": "Please tell us about the problem you meet and steps by steps describe how you come across the problem.",

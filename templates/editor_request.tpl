@@ -33,7 +33,7 @@
                 <div class="upload-tip">
                     <div>
                         <span class="text">[[myplugin:upload_type]] *jpg 、*jpeg 、*png</span>
-                        <span class="text">[[myplugin:upload_max]] 50M</span>
+                        <span class="text">[[myplugin:upload_max]] <span data-file-size="{config.maximumFileSize}"></span></span>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <div class="upload-tip">
                     <div>
                         <span class="text">[[myplugin:upload_type]] *zip 、*rar 、*txt</span>
-                        <span class="text">[[myplugin:upload_max]] 50M</span>
+                        <span class="text">[[myplugin:upload_max]] <span data-file-size="{config.maximumFileSize}"></span></span>
                         <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
                     </div>
                     <div>[[myplugin:upload_file_tip]]</div>
@@ -79,5 +79,6 @@
         <div data-lang-key="delete">[[myplugin:delete]]</div>
         <div data-lang-key="select_placeholder">[[myplugin:select_placeholder]]</div>
         <div data-lang-key="product_placeholder">[[myplugin:product_placeholder]]</div>
+        <div data-lang-key="version_placeholder">[[myplugin:version_placeholder]]</div>
     </div>
 </form>
