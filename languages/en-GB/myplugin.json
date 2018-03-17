@@ -36,5 +36,10 @@
     "suggestion_desc_label": "Detailed description",
     "suggestion_desc_placeholder": "Please tell us in details about your needs and suggestions",
     "editor1": "Report a Bug",
-    "editor2": "Make a suggestion"
+    "editor2": "Make a suggestion",
+
+    "probability_1": "90%~100%",
+    "probability_2": "50%~80%",
+    "probability_3": "10%~50%",
+    "probability_4": "<10%"
 }

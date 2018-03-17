@@ -27,10 +27,10 @@
     <div class="input-group" data-key="recurrence_probability">
         <div class="label">[[myplugin:frequency_label]]</div>
         <select placeholder="[[myplugin:step_placeholder]]">
-            <option value ="90%~100%">90%~100%</option>
-            <option value ="50%~80%">50%~80%</option>
-            <option value ="10%~50%">10%~50%</option>
-            <option value ="<10%">&lt;10%</option>
+            <option value ="90%~100%">[[myplugin:probability_1]]</option>
+            <option value ="50%~80%">[[myplugin:probability_2]]</option>
+            <option value ="10%~50%">[[myplugin:probability_3]]</option>
+            <option value ="<10%">[[myplugin:probability_4]]</option>
         </select>
     </div>
 
@@ -80,7 +80,7 @@
                     <div>
                         <span class="text">[[myplugin:upload_type]] *zip 、*rar 、*txt</span>
                         <span class="text">[[myplugin:upload_max]] <span data-file-size="{config.maximumFileSize}"></span></span>
-                        <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
+                        <!-- <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a> -->
                     </div>
                     <div>[[myplugin:upload_file_tip]]</div>
                 </div>

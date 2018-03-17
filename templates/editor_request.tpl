@@ -51,7 +51,7 @@
                     <div>
                         <span class="text">[[myplugin:upload_type]] *zip 、*rar 、*txt</span>
                         <span class="text">[[myplugin:upload_max]] <span data-file-size="{config.maximumFileSize}"></span></span>
-                        <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
+                        <!-- <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a> -->
                     </div>
                     <div>[[myplugin:upload_file_tip]]</div>
                 </div>
