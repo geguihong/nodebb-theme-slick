@@ -1,4 +1,4 @@
-<div class="subcategory">
+<div class="subcategory" style="margin-bottom: 24px;">
 	<!-- IF children.length --><p>[[category:subcategories]]</p><!-- ENDIF children.length -->
 
 	<div class="categories" itemscope itemtype="http://www.schema.org/ItemList">

@@ -8,8 +8,8 @@
         <!-- IMPORT partials/category/subcategory.tpl -->
 
 		<div style="display: flex;">
-            <div style="flex: none; margin-right: 12px;">
-                <!-- IF privileges.topics:create -->
+            <!-- IF privileges.topics:create -->
+                <div style="flex: none; margin-right: 12px;">
                     <!-- IF usingNewEditor -->
                         <!-- IF editor1 -->
                         <a href="/plugins/editor1?cid={cid}" class="btn btn-primary">[[myplugin:editor1]]</a>
@@ -19,15 +19,14 @@
                         <a href="/plugins/editor2?cid={cid}" class="btn btn-primary">[[myplugin:editor2]]</a>
                         <!-- ENDIF -->
                     <!-- ELSE -->
-                    <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+                        <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
                     <!-- ENDIF -->
-                <!-- ELSE -->
-                    <!-- IF !loggedIn -->
-                    <a component="category/post/guest" target="_top" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
-                    <!-- ENDIF !loggedIn -->
-                <!-- ENDIF privileges.topics:create -->
-            </div>
-
+                </div>
+            <!-- ELSE -->
+                <!-- IF !loggedIn -->
+                <a component="category/post/guest" target="_top" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>
+                <!-- ENDIF !loggedIn -->
+            <!-- ENDIF privileges.topics:create -->
 
             <!-- IF loggedIn -->
             <div class="clearfix" component="category/controls" style="flex:auto; background: #F7F7F7; border-radius: 4px;">
