@@ -16,13 +16,13 @@
 
         .label {
             flex: none;
-            width: 100px;
+            width: 180px;
             font-size: 14px;
             color: rgba(0,0,0,0.70);
             line-height: 48px;
             font-weight: normal;
             text-align: right;
-            padding-right: 24px;
+            padding: 0 24px 0;
 
             .required {
                 color: red;
@@ -79,13 +79,62 @@
         }
 
         .checkbox-group {
-            margin-left: 100px;
+            margin-left: 180px;
             font-size: 14px;
             color: rgba(0,0,0,0.70);
         }
 
         .radio-group {
-            padding: 12px 0;
+            margin-top: 14px;
+            display: flex;
+
+            .text {
+                margin-left: 24px;
+                color: rgba(0,0,0,0.25);
+                font-size: 14px;
+            }
+
+            .my-radio {
+                margin-right: 24px;
+                position: relative;
+                font-size: 14px;
+                color: rgba(0,0,0,0.70);
+                padding-left: 28px;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 50%;
+                }
+
+                &:after {
+                    display: none;
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #ffd200;
+                }
+            }
+            .my-radio.active {
+                &:before {
+                    border-color: #ffd200;
+                }
+                &:after {
+                    display: block;
+                }
+            }
         }
 
         input[type="text"]::placeholder,
@@ -100,13 +149,15 @@
                 cursor: pointer;
                 background-color: #F7F7F7;
                 border-radius: 2px;
-                width: 180px;
+                width: 200px;
                 height: 48px;
                 line-height: 48px;
                 text-align: center;
 
                 color: rgba(0,0,0,0.70);
                 margin-right: 24px;
+
+                flex: none;
             }
 
             .upload-tip {
@@ -117,45 +168,57 @@
                 font-size: 14px;
                 color: rgba(0,0,0,0.25);
 
-                a {
+                .text {
+                    padding-right: 16px;
+                }
+                .link {
                     color: #DC1916;
                 }
             }
         }
-    }
 
-
-
-    .preview {
-        .delete {
-            cursor: pointer;
-            color: #3465E0;
-        }
-
-        .item-file {
-            margin: 6px 0;
-
+        .preview {
             .delete {
+                cursor: pointer;
+                color: #3465E0;
+            }
+    
+            .item-file {
+                margin: 6px 0;
+    
+                .delete {
+                    display: inline-block;
+                    margin-left: 24px;
+                }
+            }
+    
+            .item-image {
                 display: inline-block;
-                margin-left: 24px;
+                margin-top: 6px;
+                margin-right: 48px;
+                width: 160px;
+                
+    
+                img {
+                    display: block;
+                    width: 100%;
+                }
+    
+                .delete-wrapper {
+                    margin-top: 12px;
+                    text-align: right;
+                }
             }
         }
 
-        .item-image {
-            display: inline-block;
-            margin-top: 6px;
-            margin-right: 48px;
-            width: 160px;
-            
-
-            img {
-                display: block;
-                width: 100%;
-            }
-
-            .delete-wrapper {
-                margin-top: 12px;
-                text-align: right;
+        .text-count-group {
+            position: relative;
+            width: 100%;
+            .text-count {
+                position: absolute;
+                right: 8px;
+                top: 14px;
+                color: rgba(0,0,0,0.25);
             }
         }
     }
@@ -168,6 +231,7 @@
     }
 
     .submit {
+        margin-left: 180px;
         margin-top: 36px;
         height: 48px;
         line-height: 48px;

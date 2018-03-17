@@ -48,5 +48,8 @@
     "suggestion_title_placeholder": "请您理性、客观地简要描述您要反馈的建议",
 
     "suggestion_desc_label": "详细描述",
-    "suggestion_desc_placeholder": "请您详细描述您的需求和建议"
+    "suggestion_desc_placeholder": "请您详细描述您的需求和建议",
+
+    "editor1": "提 Bug",
+    "editor2": "提建议"
 }

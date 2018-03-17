@@ -3,7 +3,10 @@
 
     <div class="input-group" data-key="title">
         <div class="label">[[myplugin:suggestion_title_label]]</div>
-        <input type="text" placeholder="[[myplugin:suggestion_title_placeholder]]" />
+        <div class="text-count-group">
+            <input type="text" placeholder="[[myplugin:suggestion_title_placeholder]]" />
+            <span class="text-count"></span>
+        </div>
     </div>
 
     <div class="input-group" data-key="app">
@@ -28,7 +31,10 @@
             <div class="upload-group">
                 <div class="upload-button">[[myplugin:upload_image_label]]</div>
                 <div class="upload-tip">
-                    <div>[[myplugin:upload_type]] *jpg 、*jpeg 、*png  [[myplugin:upload_max]] 50M</div>
+                    <div>
+                        <span class="text">[[myplugin:upload_type]] *jpg 、*jpeg 、*png</span>
+                        <span class="text">[[myplugin:upload_max]] 50M</span>
+                    </div>
                 </div>
             </div>
             <div class="preview"></div>
@@ -43,8 +49,9 @@
                 <div class="upload-button">[[myplugin:upload_file_label]]</div>
                 <div class="upload-tip">
                     <div>
-                        [[myplugin:upload_type]] *zip 、*rar 、*txt  [[myplugin:upload_max]] 50M
-                        <a href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
+                        <span class="text">[[myplugin:upload_type]] *zip 、*rar 、*txt</span>
+                        <span class="text">[[myplugin:upload_max]] 50M</span>
+                        <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
                     </div>
                     <div>[[myplugin:upload_file_tip]]</div>
                 </div>

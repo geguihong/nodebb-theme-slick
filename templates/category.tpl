@@ -10,7 +10,17 @@
 		<div style="display: flex;">
             <div style="flex: none; margin-right: 12px;">
                 <!-- IF privileges.topics:create -->
-                <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+                    <!-- IF usingNewEditor -->
+                        <!-- IF editor1 -->
+                        <a href="/plugins/editor1?cid={cid}" class="btn btn-primary">[[myplugin:editor1]]</a>
+                        <!-- ENDIF -->
+                        
+                        <!-- IF editor2 -->
+                        <a href="/plugins/editor2?cid={cid}" class="btn btn-primary">[[myplugin:editor2]]</a>
+                        <!-- ENDIF -->
+                    <!-- ELSE -->
+                    <button component="category/post" id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+                    <!-- ENDIF -->
                 <!-- ELSE -->
                     <!-- IF !loggedIn -->
                     <a component="category/post/guest" target="_top" href="{config.relative_path}/auth/arashivision" class="btn btn-primary">[[category:guest-login-post]]</a>

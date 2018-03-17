@@ -3,14 +3,17 @@
 
     <div class="input-group" data-key="title">
         <div class="label">[[myplugin:title_label]]</div>
-        <input type="text" placeholder="[[myplugin:title_placeholder]]" />
+        <div class="text-count-group">
+            <input type="text" placeholder="[[myplugin:title_placeholder]]" />
+            <span class="text-count"></span>
+        </div>
     </div>
 
     <div class="input-group" data-key="app">
         <div class="label">[[myplugin:product_label]]</div>
         <div>
             <select class="parent" placeholder="[[myplugin:select_placeholder]]"></select>
-            <div class="child" data-key="app"></div>
+            <div class="child"></div>
         </div>
     </div>
 
@@ -32,8 +35,9 @@
     <div class="input-group" data-key="resumable">
         <div class="label">[[myplugin:can_resume_label]]</div>
         <div class="radio-group">
-            <input type="radio" name="resumable" value="1" checked />[[myplugin:yes]]
-            <input style="margin-left: 24px;" type="radio" name="resumable" value="0" />[[myplugin:no]]
+            <div class="my-radio active" data-value="1">[[myplugin:yes]]</div>
+            <div class="my-radio" data-value="0">[[myplugin:no]]</div>
+            <div class="text">[[myplugin:can_resume_tip]]</div>
         </div>
     </div>
 
@@ -54,7 +58,10 @@
             <div class="upload-group">
                 <div class="upload-button">[[myplugin:upload_image_label]]</div>
                 <div class="upload-tip">
-                    <div>[[myplugin:upload_type]] *jpg 、*jpeg 、*png  [[myplugin:upload_max]] 50M</div>
+                    <div>
+                        <span class="text">[[myplugin:upload_type]] *jpg 、*jpeg 、*png</span>
+                        <span class="text">[[myplugin:upload_max]] 50M</span>
+                    </div>
                 </div>
             </div>
             <div class="preview"></div>
@@ -69,8 +76,9 @@
                 <div class="upload-button">[[myplugin:upload_file_label]]</div>
                 <div class="upload-tip">
                     <div>
-                        [[myplugin:upload_type]] *zip 、*rar 、*txt  [[myplugin:upload_max]] 50M
-                        <a href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
+                        <span class="text">[[myplugin:upload_type]] *zip 、*rar 、*txt</span>
+                        <span class="text">[[myplugin:upload_max]] 50M</span>
+                        <a class="link" href="[[myplugin:upload_file_link_href]]" target="_blank">[[myplugin:upload_file_link_text]]</a>
                     </div>
                     <div>[[myplugin:upload_file_tip]]</div>
                 </div>
