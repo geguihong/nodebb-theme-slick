@@ -2,8 +2,7 @@
     <meta itemprop="itemListOrder" content="descending">
     <!-- IF topics.length -->
     <div class="row topics-header hidden-xs hidden-sm">
-        <div class="col-md-7 col-xs-12"><div class="header-title">[[global:topics]]</div></div>
-		<div class="col-md-1"><div class="header-title" style="text-align: center;">[[global:votes]]</div></div>
+        <div class="col-md-8 col-xs-12"><div class="header-title">[[global:topics]]</div></div>
         <div class="col-md-1"><div class="header-title" style="text-align: center;">[[global:posts]]</div></div>
         <div class="col-md-1"><div class="header-title" style="text-align: center;">[[global:views]]</div></div>
         <div class="col-md-2"><div class="header-title">Last Reply</div></div>
@@ -12,7 +11,7 @@
     <!-- BEGIN topics -->
     <div component="category/topic" class="row category-item {function.generateTopicClass}" <!-- IMPORT partials/data/category.tpl -->>
 		<meta itemprop="name" content="{function.stripTags, title}">
-		<div class="col-md-7 col-xs-12">
+		<div class="col-md-8 col-xs-12">
 			<!-- IF showSelect -->
 	        <div class="checkbox pull-left" component="topic/select">
                 <label>
@@ -48,11 +47,6 @@
 					<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->">{topics.user.username}</a> &bull; <span class="timeago" title="{topics.timestampISO}"></span>
 				</small>
     		</div>
-		</div>
-		<div class="col-md-1 hidden-xs hidden-sm">
-		    <div class="total-view-count human-readable-number" title="{topics.votes}">
-		        {topics.votes}
-		    </div>
 		</div>
 		<div class="col-md-1 hidden-xs hidden-sm">
 		    <div class="total-post-count human-readable-number" title="{topics.postcount}">

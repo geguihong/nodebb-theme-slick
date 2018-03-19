@@ -80,5 +80,6 @@
         <div data-lang-key="select_placeholder">[[myplugin:select_placeholder]]</div>
         <div data-lang-key="product_placeholder">[[myplugin:product_placeholder]]</div>
         <div data-lang-key="version_placeholder">[[myplugin:version_placeholder]]</div>
+        <div data-lang-key="error_title">[[myplugin:error_title]]</div>
     </div>
 </form>

@@ -57,5 +57,9 @@
     "probability_1": "必现 90%~100%",
     "probability_2": "经常 50%~80%",
     "probability_3": "偶尔 10%~50%",
-    "probability_4": "个例 <10%"
+    "probability_4": "个例 <10%",
+
+    "subcategories": "分类",
+
+    "error_title": "标题必须包含8~80个字符"
 }

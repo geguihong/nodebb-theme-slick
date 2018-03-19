@@ -38,8 +38,12 @@
     "editor1": "Report a Bug",
     "editor2": "Make a suggestion",
 
-    "probability_1": "90%~100%",
-    "probability_2": "50%~80%",
-    "probability_3": "10%~50%",
-    "probability_4": "<10%"
+    "probability_1": "Always happen 90%~100%",
+    "probability_2": "Often 50%~80%",
+    "probability_3": "Sometimes/occasionally 10%~50%",
+    "probability_4": "Seldom/rarely <10%",
+
+    "subcategories": "Classification",
+
+    "error_title": "The title must contain 8~80 characters"
 }
