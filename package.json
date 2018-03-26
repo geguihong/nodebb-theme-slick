@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-insta360-forum",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "nbbpm": {
     "compatibility": "^1.7.1"
   },
