@@ -3,7 +3,7 @@
         <div class="col-md-8 col-xs-12"><div class="header-title">[[category:category]]</div></div>
         <div class="col-md-1"><div class="header-title" style="text-align: center;">[[global:topics]]</div></div>
         <div class="col-md-1"><div class="header-title" style="text-align: center;">[[global:posts]]</div></div>
-        <div class="col-md-2"><div class="header-title">Last Post</div></div>
+        <div class="col-md-2"><div class="header-title">[[myplugin:last_post]]</div></div>
     </div>
     <!-- BEGIN categories -->
     <div class="row" component="categories/category" data-cid="{categories.cid}" data-numRecentReplies="1">

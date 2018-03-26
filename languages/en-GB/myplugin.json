@@ -43,7 +43,9 @@
     "probability_3": "Sometimes/occasionally 10%~50%",
     "probability_4": "Seldom/rarely <10%",
 
-    "subcategories": "Classification",
+    "error_title": "The title must contain 8~80 characters",
 
-    "error_title": "The title must contain 8~80 characters"
+    "subcategories": "Classification",
+    "last_post": "Last Post",
+    "last_reply": "Last Reply"
 }

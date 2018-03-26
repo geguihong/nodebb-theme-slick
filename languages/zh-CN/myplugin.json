@@ -59,7 +59,9 @@
     "probability_3": "偶尔 10%~50%",
     "probability_4": "个例 <10%",
 
-    "subcategories": "分类",
+    "error_title": "标题必须包含8~80个字符",
 
-    "error_title": "标题必须包含8~80个字符"
+    "subcategories": "分类",
+    "last_post": "最新主题",
+    "last_reply": "最新回复"
 }
