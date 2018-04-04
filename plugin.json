@@ -38,7 +38,8 @@
 		"lib/editor.js"
 	],
 	"acpScripts": [
-		"lib/admin.js"
+		"lib/admin.js",
+		"lib/analytics.js"
 	],
 	"templates": "./templates",
 	"languages": "./languages",
